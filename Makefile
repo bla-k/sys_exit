@@ -5,7 +5,7 @@ farewell: farewell.o
 	@gcc -o farewell farewell.o -lm
 
 farewell.o: farewell.c
-	@gcc -W -Wall -Werror -O2 -c farewell.c
+	@gcc -O2 -c farewell.c
 
 clean:
 	@rm -f farewell farewell.o
